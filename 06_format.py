@@ -4,8 +4,8 @@ num2 = input("Enter num two : ")
 
 print(int(num1) + int(num2))
 
-fname ="Sachin"
-lname ="Murali"
+fname =10
+lname =20
 
 #concat in print
 
