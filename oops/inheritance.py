@@ -11,4 +11,24 @@ class Chils(Parent):
 
 
 chils = Chils("Samray", 44,"Paris")
-print(chils.age)
+# print(chils.age)
+
+
+class A:
+    a=10
+    
+class B(A):
+    a=20
+    
+class C(B):
+   #a=30 
+   pass
+   
+call_class = C()
+print(call_class.a)
+#Is sub class check
+print(issubclass(B,A))
+
+#Is instance check
+
+print(isinstance(call_class,A))
