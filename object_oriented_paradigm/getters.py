@@ -18,5 +18,6 @@ class Persons:
 person_one = Persons("Samuraiyy", 22)
 person_one.name = "ray"
 person_one.name = "base"
-
+x = 7.0
+print(x.is_integer())
 print(person_one.name)
