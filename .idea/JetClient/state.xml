@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="id" value="7b65430b-928b-42f5-80bb-e8f75f548b86" />
+          <option name="name" value="FAST-API" />
+          <option name="requests">
+            <list>
+              <requestState>
+                <option name="body">
+                  <bodyState>
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Sam&quot;,&#10;  &quot;content&quot;: &quot;dvvfvv&quot;,&#10;  &quot;active&quot;: &quot;1000&quot;&#10;}" />
+                    <option name="type" value="JSON" />
+                  </bodyState>
+                </option>
+                <option name="headers">
+                  <list>
+                    <headerState>
+                      <option name="key" value="Content-Type" />
+                      <option name="value" value="application/json" />
+                    </headerState>
+                  </list>
+                </option>
+                <option name="id" value="68723579-02ee-481b-9d18-02fafe219aac" />
+                <option name="method" value="GET" />
+                <option name="name" value="posts" />
+                <option name="url" value="http://localhost:8000/posts" />
+              </requestState>
+            </list>
+          </option>
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="$PROJECT_DIR$/.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="eb1dcb45-7661-41f8-a916-b162b358a8fb" />
+  </component>
+</project>
