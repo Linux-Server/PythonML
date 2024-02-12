@@ -11,7 +11,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Sam&quot;,&#10;  &quot;content&quot;: &quot;dvvfvv&quot;,&#10;  &quot;active&quot;: &quot;1000&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;title&quot;: &quot;Killer&quot;,&#10;  &quot;content&quot;: &quot;dvvfvv&quot;,&#10;  &quot;active&quot;: &quot;1000&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -24,9 +24,15 @@
                   </list>
                 </option>
                 <option name="id" value="68723579-02ee-481b-9d18-02fafe219aac" />
-                <option name="method" value="GET" />
+                <option name="method" value="POST" />
                 <option name="name" value="posts" />
                 <option name="url" value="http://localhost:8000/posts" />
+              </requestState>
+              <requestState>
+                <option name="id" value="8085fe0e-f550-4e45-92bd-9486dfbd4952" />
+                <option name="method" value="GET" />
+                <option name="name" value="get_latest_posts" />
+                <option name="url" value="http://localhost:8000/posts/latest" />
               </requestState>
             </list>
           </option>
