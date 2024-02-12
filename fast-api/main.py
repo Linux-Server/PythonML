@@ -28,7 +28,6 @@ def find_post(id: int):
             return i
 
 
-
 @app.get("/posts")
 def get_posts():
     return {"data": all_posts}
@@ -39,9 +38,10 @@ def get_latest_post():
     print("Inside out")
     return all_posts[len(all_posts) - 1]
 
+
 # fetch individual post
 @app.get("/posts/{id}")
-def get_post(id: int,):
+def get_post(id: int, ):
     print(id)
     return_data = find_post(id)
     if not return_data:
@@ -56,5 +56,16 @@ def create_post(payload: Posts):
     all_posts.append({"id": randrange(3, 100), **payload.dict()})
     return {"data": payload.dict()}
 
+def find_by_id(id):
+    for i,p in enumerate(all_posts):
+        if p["id"] == id:
+            return i
 
 
+@app.delete("/posts/{id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_post(id:int):
+    return_id = find_by_id(id)
+    if return_id == None:
+        raise  HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No data found to be deleted")
+    all_posts.pop(return_id)
+    raise HTTPException(status_code=204, detail="Post deleted Successfully")

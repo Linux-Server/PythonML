@@ -24,9 +24,9 @@
                   </list>
                 </option>
                 <option name="id" value="68723579-02ee-481b-9d18-02fafe219aac" />
-                <option name="method" value="POST" />
+                <option name="method" value="DELETE" />
                 <option name="name" value="posts" />
-                <option name="url" value="http://localhost:8000/posts" />
+                <option name="url" value="http://localhost:8000/posts/2" />
               </requestState>
               <requestState>
                 <option name="id" value="8085fe0e-f550-4e45-92bd-9486dfbd4952" />
