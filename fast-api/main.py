@@ -1,8 +1,8 @@
 from typing import Optional
-
 from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
 from random import randrange
+import psycopg
 
 app = FastAPI()
 
@@ -69,3 +69,15 @@ def delete_post(id:int):
         raise  HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No data found to be deleted")
     all_posts.pop(return_id)
     raise HTTPException(status_code=204, detail="Post deleted Successfully")
+
+
+@app.put("/posts/{id}")
+def update_post(id:int, payload:Posts):
+    return_id = find_by_id(id)
+    if return_id ==None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Update data not found")
+    payload_dict = payload.dict()
+    payload_dict["id"] = id
+    print("Payload is : ", payload_dict)
+    all_posts[return_id] = payload_dict
+    return "Post udated success"
