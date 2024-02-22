@@ -1,40 +1,26 @@
-arr = [1,3,5,7,2,4,6]
-aux = [1,3,5,7,2,4,6]
+class MergeSort():
+    def __init__(self, arr):
+        self.arr = arr
+        self.aux = arr
 
-low = 0
-hi = 6
-mid = 3
-
-
-        
-print(arr)
-        
-    
-class MergeSort:
-    
-    def merge(self, arr,aux,low,mid,hi):
-        
-        #low = 0
-        #hi = 6
-        #mid = 3
-        i = low
+    def merge(self,lo=0,mid=3,hi=7):
+        i = lo
         j = mid+1
-
-
-        for (k, val) in enumerate(arr):
-            # Edge cases : if i>mid => j++
-            print(k)
-            if i>mid:
-                arr[k] = aux[j]
-                j+= 1
-            elif j>hi:
-                arr[k] = aux[i]
-                i+= 1
-            elif aux[i] < aux[j]:
-                arr[k] = aux[i]
-                i+= 1
+        for index,value in enumerate(self.aux):
+            if self.aux[i] < self.aux[j]:
+                self.arr[index] = self.aux[index]
             else:
-                aux[j] < aux[i]
-                arr[k] = aux[j]
-                j+= 1
-        
+                self.arr[index] = self.aux[index]
+
+
+
+
+
+
+
+
+my_arr = [2,4,6,8, 1,3,5,7]
+merge = MergeSort(my_arr)
+print(merge.arr)
+merge.merge()
+print(merge.arr)
