@@ -2,7 +2,6 @@ from typing import Optional
 from fastapi import FastAPI, Response, status, HTTPException
 from pydantic import BaseModel
 from random import randrange
-import psycopg
 
 app = FastAPI()
 
@@ -81,3 +80,5 @@ def update_post(id:int, payload:Posts):
     print("Payload is : ", payload_dict)
     all_posts[return_id] = payload_dict
     return "Post udated success"
+
+

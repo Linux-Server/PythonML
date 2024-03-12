@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JetClientSettings">
+    <option name="requestResponseProportion" value="0.3936916" />
     <option name="verticalRequestResponseOrientation" value="false" />
   </component>
 </project>
